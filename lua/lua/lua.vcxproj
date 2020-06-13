@@ -75,6 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)$(ProjectName)\src;E:\Projects\windows-lua.exe\lua\lua;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -140,6 +141,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lpeg\lpcap.c" />
+    <ClCompile Include="lpeg\lpcode.c" />
+    <ClCompile Include="lpeg\lpprint.c" />
+    <ClCompile Include="lpeg\lptree.c" />
+    <ClCompile Include="lpeg\lpvm.c" />
     <ClCompile Include="src\lapi.c" />
     <ClCompile Include="src\lauxlib.c" />
     <ClCompile Include="src\lbaselib.c" />
@@ -173,6 +179,13 @@
     <ClCompile Include="src\print.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="lpeg\lpcap.h" />
+    <ClInclude Include="lpeg\lpcode.h" />
+    <ClInclude Include="lpeg\lpeg.h" />
+    <ClInclude Include="lpeg\lpprint.h" />
+    <ClInclude Include="lpeg\lptree.h" />
+    <ClInclude Include="lpeg\lptypes.h" />
+    <ClInclude Include="lpeg\lpvm.h" />
     <ClInclude Include="src\lapi.h" />
     <ClInclude Include="src\lauxlib.h" />
     <ClInclude Include="src\lcode.h" />

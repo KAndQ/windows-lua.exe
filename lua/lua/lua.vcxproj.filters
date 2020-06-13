@@ -108,6 +108,21 @@
     <ClCompile Include="src\print.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="lpeg\lpcap.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lpeg\lpcode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lpeg\lpprint.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lpeg\lptree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lpeg\lpvm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\lapi.h">
@@ -177,6 +192,27 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\lzio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lpcap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lpcode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lpeg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lpprint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lptree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lptypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lpeg\lpvm.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
