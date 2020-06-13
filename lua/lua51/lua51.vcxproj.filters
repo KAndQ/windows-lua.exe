@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="lpeg">
+      <UniqueIdentifier>{baa64658-2773-443f-83d9-7d6a16a47a80}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src-lua51\lapi.c">
@@ -108,6 +111,21 @@
     <ClCompile Include="..\..\src-lua51\print.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src-lpeg\lpcap.c">
+      <Filter>lpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src-lpeg\lpcode.c">
+      <Filter>lpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src-lpeg\lpprint.c">
+      <Filter>lpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src-lpeg\lptree.c">
+      <Filter>lpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src-lpeg\lpvm.c">
+      <Filter>lpeg</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src-lua51\lapi.h">
@@ -178,6 +196,27 @@
     </ClInclude>
     <ClInclude Include="..\..\src-lua51\lzio.h">
       <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lpcap.h">
+      <Filter>lpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lpcode.h">
+      <Filter>lpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lpeg.h">
+      <Filter>lpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lpprint.h">
+      <Filter>lpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lptree.h">
+      <Filter>lpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lptypes.h">
+      <Filter>lpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src-lpeg\lpvm.h">
+      <Filter>lpeg</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

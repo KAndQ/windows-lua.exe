@@ -72,9 +72,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\src-lua51;$(SolutionDir)..\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\src-lua51;$(SolutionDir)..\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -140,6 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src-lpeg\lpcap.c" />
+    <ClCompile Include="..\..\src-lpeg\lpcode.c" />
+    <ClCompile Include="..\..\src-lpeg\lpprint.c" />
+    <ClCompile Include="..\..\src-lpeg\lptree.c" />
+    <ClCompile Include="..\..\src-lpeg\lpvm.c" />
     <ClCompile Include="..\..\src-lua51\lapi.c" />
     <ClCompile Include="..\..\src-lua51\lauxlib.c" />
     <ClCompile Include="..\..\src-lua51\lbaselib.c" />
@@ -173,6 +180,13 @@
     <ClCompile Include="..\..\src-lua51\print.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src-lpeg\lpcap.h" />
+    <ClInclude Include="..\..\src-lpeg\lpcode.h" />
+    <ClInclude Include="..\..\src-lpeg\lpeg.h" />
+    <ClInclude Include="..\..\src-lpeg\lpprint.h" />
+    <ClInclude Include="..\..\src-lpeg\lptree.h" />
+    <ClInclude Include="..\..\src-lpeg\lptypes.h" />
+    <ClInclude Include="..\..\src-lpeg\lpvm.h" />
     <ClInclude Include="..\..\src-lua51\lapi.h" />
     <ClInclude Include="..\..\src-lua51\lauxlib.h" />
     <ClInclude Include="..\..\src-lua51\lcode.h" />
