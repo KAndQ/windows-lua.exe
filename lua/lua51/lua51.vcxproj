@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{91866b88-119b-4d99-af0a-bd9280781d9e}</ProjectGuid>
-    <RootNamespace>lua</RootNamespace>
+    <ProjectGuid>{f5d53a95-a3ef-44f0-a0eb-9d117039e9a5}</ProjectGuid>
+    <RootNamespace>lua51</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -75,7 +75,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)$(ProjectName)\src;E:\Projects\windows-lua.exe\lua\lua;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -141,74 +140,62 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lpeg\lpcap.c" />
-    <ClCompile Include="lpeg\lpcode.c" />
-    <ClCompile Include="lpeg\lpprint.c" />
-    <ClCompile Include="lpeg\lptree.c" />
-    <ClCompile Include="lpeg\lpvm.c" />
-    <ClCompile Include="src\lapi.c" />
-    <ClCompile Include="src\lauxlib.c" />
-    <ClCompile Include="src\lbaselib.c" />
-    <ClCompile Include="src\lcode.c" />
-    <ClCompile Include="src\ldblib.c" />
-    <ClCompile Include="src\ldebug.c" />
-    <ClCompile Include="src\ldo.c" />
-    <ClCompile Include="src\ldump.c" />
-    <ClCompile Include="src\lfunc.c" />
-    <ClCompile Include="src\lgc.c" />
-    <ClCompile Include="src\linit.c" />
-    <ClCompile Include="src\liolib.c" />
-    <ClCompile Include="src\llex.c" />
-    <ClCompile Include="src\lmathlib.c" />
-    <ClCompile Include="src\lmem.c" />
-    <ClCompile Include="src\loadlib.c" />
-    <ClCompile Include="src\lobject.c" />
-    <ClCompile Include="src\lopcodes.c" />
-    <ClCompile Include="src\loslib.c" />
-    <ClCompile Include="src\lparser.c" />
-    <ClCompile Include="src\lstate.c" />
-    <ClCompile Include="src\lstring.c" />
-    <ClCompile Include="src\lstrlib.c" />
-    <ClCompile Include="src\ltable.c" />
-    <ClCompile Include="src\ltablib.c" />
-    <ClCompile Include="src\ltm.c" />
-    <ClCompile Include="src\lua.c" />
-    <ClCompile Include="src\lundump.c" />
-    <ClCompile Include="src\lvm.c" />
-    <ClCompile Include="src\lzio.c" />
-    <ClCompile Include="src\print.c" />
+    <ClCompile Include="..\..\src-lua51\lapi.c" />
+    <ClCompile Include="..\..\src-lua51\lauxlib.c" />
+    <ClCompile Include="..\..\src-lua51\lbaselib.c" />
+    <ClCompile Include="..\..\src-lua51\lcode.c" />
+    <ClCompile Include="..\..\src-lua51\ldblib.c" />
+    <ClCompile Include="..\..\src-lua51\ldebug.c" />
+    <ClCompile Include="..\..\src-lua51\ldo.c" />
+    <ClCompile Include="..\..\src-lua51\ldump.c" />
+    <ClCompile Include="..\..\src-lua51\lfunc.c" />
+    <ClCompile Include="..\..\src-lua51\lgc.c" />
+    <ClCompile Include="..\..\src-lua51\linit.c" />
+    <ClCompile Include="..\..\src-lua51\liolib.c" />
+    <ClCompile Include="..\..\src-lua51\llex.c" />
+    <ClCompile Include="..\..\src-lua51\lmathlib.c" />
+    <ClCompile Include="..\..\src-lua51\lmem.c" />
+    <ClCompile Include="..\..\src-lua51\loadlib.c" />
+    <ClCompile Include="..\..\src-lua51\lobject.c" />
+    <ClCompile Include="..\..\src-lua51\lopcodes.c" />
+    <ClCompile Include="..\..\src-lua51\loslib.c" />
+    <ClCompile Include="..\..\src-lua51\lparser.c" />
+    <ClCompile Include="..\..\src-lua51\lstate.c" />
+    <ClCompile Include="..\..\src-lua51\lstring.c" />
+    <ClCompile Include="..\..\src-lua51\lstrlib.c" />
+    <ClCompile Include="..\..\src-lua51\ltable.c" />
+    <ClCompile Include="..\..\src-lua51\ltablib.c" />
+    <ClCompile Include="..\..\src-lua51\ltm.c" />
+    <ClCompile Include="..\..\src-lua51\lua.c" />
+    <ClCompile Include="..\..\src-lua51\lundump.c" />
+    <ClCompile Include="..\..\src-lua51\lvm.c" />
+    <ClCompile Include="..\..\src-lua51\lzio.c" />
+    <ClCompile Include="..\..\src-lua51\print.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lpeg\lpcap.h" />
-    <ClInclude Include="lpeg\lpcode.h" />
-    <ClInclude Include="lpeg\lpeg.h" />
-    <ClInclude Include="lpeg\lpprint.h" />
-    <ClInclude Include="lpeg\lptree.h" />
-    <ClInclude Include="lpeg\lptypes.h" />
-    <ClInclude Include="lpeg\lpvm.h" />
-    <ClInclude Include="src\lapi.h" />
-    <ClInclude Include="src\lauxlib.h" />
-    <ClInclude Include="src\lcode.h" />
-    <ClInclude Include="src\ldebug.h" />
-    <ClInclude Include="src\ldo.h" />
-    <ClInclude Include="src\lfunc.h" />
-    <ClInclude Include="src\lgc.h" />
-    <ClInclude Include="src\llex.h" />
-    <ClInclude Include="src\llimits.h" />
-    <ClInclude Include="src\lmem.h" />
-    <ClInclude Include="src\lobject.h" />
-    <ClInclude Include="src\lopcodes.h" />
-    <ClInclude Include="src\lparser.h" />
-    <ClInclude Include="src\lstate.h" />
-    <ClInclude Include="src\lstring.h" />
-    <ClInclude Include="src\ltable.h" />
-    <ClInclude Include="src\ltm.h" />
-    <ClInclude Include="src\lua.h" />
-    <ClInclude Include="src\luaconf.h" />
-    <ClInclude Include="src\lualib.h" />
-    <ClInclude Include="src\lundump.h" />
-    <ClInclude Include="src\lvm.h" />
-    <ClInclude Include="src\lzio.h" />
+    <ClInclude Include="..\..\src-lua51\lapi.h" />
+    <ClInclude Include="..\..\src-lua51\lauxlib.h" />
+    <ClInclude Include="..\..\src-lua51\lcode.h" />
+    <ClInclude Include="..\..\src-lua51\ldebug.h" />
+    <ClInclude Include="..\..\src-lua51\ldo.h" />
+    <ClInclude Include="..\..\src-lua51\lfunc.h" />
+    <ClInclude Include="..\..\src-lua51\lgc.h" />
+    <ClInclude Include="..\..\src-lua51\llex.h" />
+    <ClInclude Include="..\..\src-lua51\llimits.h" />
+    <ClInclude Include="..\..\src-lua51\lmem.h" />
+    <ClInclude Include="..\..\src-lua51\lobject.h" />
+    <ClInclude Include="..\..\src-lua51\lopcodes.h" />
+    <ClInclude Include="..\..\src-lua51\lparser.h" />
+    <ClInclude Include="..\..\src-lua51\lstate.h" />
+    <ClInclude Include="..\..\src-lua51\lstring.h" />
+    <ClInclude Include="..\..\src-lua51\ltable.h" />
+    <ClInclude Include="..\..\src-lua51\ltm.h" />
+    <ClInclude Include="..\..\src-lua51\lua.h" />
+    <ClInclude Include="..\..\src-lua51\luaconf.h" />
+    <ClInclude Include="..\..\src-lua51\lualib.h" />
+    <ClInclude Include="..\..\src-lua51\lundump.h" />
+    <ClInclude Include="..\..\src-lua51\lvm.h" />
+    <ClInclude Include="..\..\src-lua51\lzio.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
